@@ -1,0 +1,496 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<script src="js/Funciones.js" type="text/javascript">
+</script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="Menu">
+	<p>.</p>
+	<p>&nbsp;</p>
+	<div data-role="header">
+	  <h1>Menu principal</h1>
+	</div>
+	<div data-role="content" >	
+		<ul data-role="listview">
+			<li><a href="#Historia" data-transition="flip">Sobre Lea Michele</a></li>
+            <li><a href="#Fotos" data-transition="pop">Galeria</a></li>
+			<li><a href="#Equipo" data-transition="fade">Jugadores</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" >
+    <h4>Pie de página</h4>
+		<div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio 
+          
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+    </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="Historia">
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> BACK </a>
+		<h1> ¡H I S T O R I A! </h1>
+	</div>
+	<div data-role="content" align="center">
+    
+    <p>Desliza sobre el cuadro de texto.</p>
+    	<p style="border:1px solid black;height:200px;width;200px;"></p>
+        <p><span style="color:blue"></span></p>
+    	
+	<a href="#LeaMichele" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/LeaMichele.jpg" alt="Lea" style="width:100px";></a>
+    
+    <div data-role="popup" id="LeaMichele">
+     <p>¡ñ.ñ Ella es Lea Michele :3!</p>
+     <a href="#LeaMichele" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/LeaMichele.jpg" style="width:800px;height:600px;" alt="Lea"> </div>
+
+
+   </div>
+    
+    <table width="250" border="1">
+  <tr bgcolor="#9933CC">
+    <td>Nombre completo</td>
+    <td>Nacimiento</td>
+    <td>Estatura</td>
+    <td>Pareja</td>
+    <td>Albunes</td>
+    <td>Personaje que interpreta:</td>
+    <td>Ocupacion</td>
+  </tr>
+  <tr bgcolor="#CC00CC">
+    <td>Lea Michele Sarfati </td>
+    <td>29 de agosto de 1986 (edad 28), Bronx, Nueva York, Estados Unidos</td>
+    <td>1,59 m</td>
+    <td>Matthew Paetz (2014)</td>
+    <td>Louder, Glee: The Music, Presents the Warblers</td>
+    <td> Rachel Berry</td>
+    <td>Es una modelo, actriz y cantante estadounidense de teatro, cine y televisión.</td>
+  </tr>
+</table>
+
+
+
+
+    
+    </center>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+	</div>
+    </div>
+</div>
+
+<div data-role="page" id="Fotos">
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> BACK </a>
+		<h1> F O T O S *www* </h1>
+	</div>
+	<div data-role="content">
+    
+ 
+    	
+		Contenido: 
+<center>
+  <table width="505" border="1">
+  <tr>
+    <td align="center" bgcolor="#33CCFF">Amores :3 </td>
+    </tr>
+  </table>
+  
+  <table width="200" border="1">
+  <tr>
+    <td> <a href="#Amour" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/V&L.jpg" alt="Val" style="width:100px";></a>
+    
+    <div data-role="popup" id="Amour">
+     <p>¡ñ.ñ Mi vidasa entera, solo ella, mi razon de ser *www* :3!</p>
+     <a href="#Amour" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/V&L.jpg" style="width:400px;height:800px;" alt="Val"> </div></td>
+     
+     
+    <td> <a href="#CBTis" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Equipo.jpg" alt="257" style="width:100px";></a>
+    
+    <div data-role="popup" id="CBTis">
+     <p>¡ñ.ñ El mejor equipo :3!</p>
+     <a href="#CBTis" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Equipo.jpg" style="width:700px;height:400px;" alt="257"> </div> </td>
+    
+    <td> <a href="#Fintis" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Fintis.jpg" alt="Jose" style="width:100px";></a>
+    
+    <div data-role="popup" id="Fintis">
+     <p>¡ñ.ñ El, el mejor *uu* :3!</p>
+     <a href="#Fintis" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Fintis.jpg" style="width:400px;height:800px;" alt="Jose"> </div> </td>
+     
+    <td> <a href="#Amorsh" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Amorsh.jpg" alt="Amorsh" style="width:100px";></a>
+    
+    <div data-role="popup" id="Amorsh">
+     <p>¡ñ.ñ Las mejores de toda la vida *www* :3!</p>
+     <a href="#Amorsh" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Amorsh.jpg" style="width:800px;height:400px;" alt="Amorsh"> </div> </td>
+    
+    </tr>
+</table><p>
+
+<table width="505" border="1">
+     <tr>
+    <td align="center" bgcolor="#CC99FF">Mis chicas :3 </td>
+    </tr>
+  </table>
+  <tr>
+    <td><a href="#LaMejor" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Bf1.jpg" alt="LaMejor" style="width:100px";></a>
+    
+    <div data-role="popup" id="LaMejor">
+     <p>¡ñ.ñ La mejor amiga que eh tenido *www* :3!</p>
+     <a href="#LaMejor" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Bf1.jpg" style="width:400px;height:800px;" alt="LaMejor"> </div></td>
+    
+    
+    <td> <a href="#LasMejores" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Bff.jpg" alt="LasMejores" style="width:100px";></a>
+    
+    <div data-role="popup" id="LasMejores">
+     <p>¡ñ.ñ Mis mejores 6 amigas, las mejores *www* :3!</p>
+     <a href="#LasMejores" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Bff.jpg" style="width:700px;height:400px;" alt="LasMejores"> </div> </td>
+    
+    
+    <td> <a href="#Patys" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Bff1.jpg" alt="Patys" style="width:100px";></a>
+    
+    <div data-role="popup" id="Patys">
+     <p>¡ñ.ñ Ellas, Paty y Laisha *www* :3!</p>
+     <a href="#Patys" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Bff1.jpg" style="width:700px;height:400px;" alt="APtys"> </div> </td>
+    
+    
+    <td> <a href="#BFF" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Best.jpg" alt="BFF" style="width:100px";></a>
+    
+    <div data-role="popup" id="BFF">
+     <p>¡ñ.ñ Diversion con ellas *www* :3!</p>
+     <a href="#BFF" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Best.jpg" style="width:700px;height:400px;" alt="BFF"> </div> </td>
+  </tr>
+</table><p>
+
+<table width="505" border="1">
+  <tr>
+    <td align="center" bgcolor="#CCFF00">Mi familia :3 ñ.ñ </td> 
+  </tr>
+  </table>
+  <tr>
+    <td><a href="#Familia" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Familia2.jpg" alt="Familia" style="width:100px";></a>
+    
+    <div data-role="popup" id="Familia">
+     <p>¡ñ.ñ  mi vida entera, todo en ellos *www* :3!</p>
+     <a href="#Familia" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Familia2.jpg" style="width:400px;height:800px;" alt="Familia"> </div></td>
+    
+    
+    <td> <a href="#Primos" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Primos.jpg" alt="Primos" style="width:100px";></a>
+    
+    <div data-role="popup" id="Primos">
+     <p>¡ñ.ñ Son los mejores, los amo demasiado *www* :3!</p>
+     <a href="#Primos" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Primos.jpg" style="width:400px;height:800px;" alt="Primos"> </div> </td>
+    
+    
+    <td> <a href="#Ian" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Goldo.jpg" alt="Val" style="width:100px";></a>
+    
+    <div data-role="popup" id="Ian">
+     <p>¡ñ.ñ Mi adoracion, el mi gordo :3 el unico, mi Ian *www* :3!</p>
+     <a href="#Amour" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Goldo.jpg" style="width:400px;height:800px;" alt="Ian"> </div> </td>
+    
+    
+    <td> <a href="#Hermanas" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Favorita.jpg" alt="Hermanas" style="width:100px";></a>
+    
+    <div data-role="popup" id="Hermanas">
+     <p>¡ñ.ñ Ellas, las mejores, mis hermosas hermanas *www* :3!</p>
+     <a href="#Hermanas" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Favorita.jpg" style="width:700px;height:400px;" alt="Hermanas"> </div></td>
+    
+    
+  </tr>
+</table>
+</Center>
+    
+     </div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+    </div>
+	</div>
+</div>
+
+<div data-role="page" id="Equipo" >
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> BACK </a>
+		<h1> J U G A D O R E S :3</h1>
+	</div>
+	<div data-role="content" align="center">
+   
+    
+    <a href="#Jordan23" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/Jordan.jpg" alt="23" style="width:100px";></a>
+    
+    <div data-role="popup" id="Jordan23">
+     <p>¡Michael Jordan :3 ñ.ñ</p>
+     <a href="#Jordan23" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/Jordan.jpg" style="width:600px;height:800px;" alt="23"> </div>	
+		
+        <center>
+          
+<table width="200" border="1">
+  <tr bgcolor="#999999">
+    <td>Nombre del jugador:</td>
+    <td>Nacimiento:</td>
+    <td> Estatura y peso:</td>
+    <td>Trayectoria:</td>
+    <td>Dorsal(es) </td>
+    <td>Posicion: </td>
+  </tr>
+  <tr bgcolor="#FF0000">
+    <td>Michael Jeffrey Jordan</td>
+    <td> Brooklyn, Flag of the United States.svg Estados Unidos, 17 de febrero de 1963 (52 años)</td>
+    <td>1,98 m , 98 kg </td>
+    <td> Chicago Bulls (1984-1993, 1995-1998)
+         Washington Wizards (2001-2003)</td>
+    <td> 23, 45, 9, 12</td>
+    <td> Escolta</td>
+  </tr>
+</table>
+</center>
+
+<center>
+<img src="Imagenes/elena-delle-donne.jpg" width="160" height="200" alt="11"> </div>
+
+<table width="200" border="1">
+  <tr bgcolor="#00CCCC">
+     <td>Nombre del jugador:</td>
+     <td>Nacimiento:</td>
+    <td> Estatura y peso:</td>
+    <td>Trayectoria:</td>
+    <td>Dorsal(es) </td>
+    <td>Posicion: </td>
+  </tr>
+  <tr bgcolor="#0066FF">
+    <td>Elena Delle Donne</td>
+    <td> 5 de septiembre de 1989 (edad 25), Wilmington, Delaware, Estados Unidos</td>
+    <td>1.96 m , 85 kg</td>
+    <td>Chicago Sky</td>
+    <td> 11 </td>
+    <td> Alero, Escolta</td>
+  </tr>
+</table>
+</center>
+
+<center>
+
+<img src="Imagenes/lebron-james6.png" width="250" height="200" alt="6">
+
+<table width="200" border="1">
+  <tr bgcolor="#0066CC">
+     <td>Nombre del jugador:</td>
+     <td>Nacimiento:</td>
+    <td> Estatura y peso:</td>
+    <td>Trayectoria:</td>
+    <td>Dorsal(es) </td>
+    <td>Posicion: </td>
+  </tr>
+  <tr bgcolor="#CC9900">
+    <td>LeBron Raymone James</td>
+    <td> Akron, Ohio, Estados Unidos, 30 de diciembre de 1984 (30 años)</td>
+    <td>	2,03 m , 113 kg </td>
+    <td>Cleveland Cavaliers (2003-2010)
+         Miami Heat (2010-2014)
+         Cleveland Cavaliers (2014-presente)</td>
+    <td> 23, 6 </td>
+    <td> Alero</td>
+  </tr>
+</table>
+</center>
+<center>
+
+<img src="Imagenes/anthony12.jpg" width="160" height="200" alt="12">
+
+<table width="200" border="1">
+  <tr bgcolor="#6699CC">
+     <td>Nombre del jugador:</td>
+     <td>Nacimiento:</td>
+    <td> Estatura y peso:</td>
+    <td>Trayectoria:</td>
+    <td>Dorsal(es) </td>
+    <td>Posicion: </td>
+  </tr>
+  <tr bgcolor="#3366CC">
+    <td> Karl-Anthony Towns</td>
+    <td> Metuchen, Nueva Jersey, Estados Unidos, 15 de noviembre de 1995 (19 años)</td>
+    <td> 2,13 m , 110 kg </td>
+    <td> Universidad de Kentucky (2014-presente)</td>
+    <td> 12 </td>
+    <td> Pívot</td>
+  </tr>
+</table>
+</center>
+
+
+<div data-role="footer" data-position="fixed">
+	  <div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+    </div>
+	</div>
+</div>
+
+<div data-role="page" id="ayuda">
+  <div data-role="header">
+  <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> BACK </a>
+    <h1>¡¡¡AYUDA!!!</h1>
+  </div>
+  <div data-role="content" align="center"> <br>
+  
+  Aqui podremos ayudar, si la aplicacion tiene algun problema, puede contactar al este numero 5544950734 y con mucho gusto lo atendemos, si usted no nos encuentra en ese numero, puede comunicarse a este correo electronico y nosotros con mucho gusto le ayudaremos con sus dudas: <p>paula_lizzet@hotmail.com.<br>
+Gracias por su preferencia.
+  </div>
+  <div data-role="footer" data-position="fixed">
+    
+    <div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+    	</ul>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+<div data-role="page" id="contacto">
+  <div data-role="header">
+  <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> BACK </a>
+    <h1>¡¡¡ C O N T A C T A N O S !!!</h1>
+  </div>
+  <div data-role="content" align="center"><p>
+  
+   Podra contactarnos por estos medios:<br>
+      paula_lizzet@hotmail.com<br>
+      Por WhatsApp: 5544950134<br>
+      Tambien nos pueden contactarnos por este numero telefonico 4740245. <br>
+      Se comunicara con la Señorita: Lizzet Rodriguez Rosales. <br>
+          ¡ G R A C I A S ! :D 
+          </div>
+  <div data-role="footer" data-position="fixed">
+  
+  <div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+    	</ul>
+    </div>
+  
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
